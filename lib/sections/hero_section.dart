@@ -4,7 +4,6 @@ import 'package:porfolio/widgets/social_button.dart';
 import 'package:porfolio/widgets/available_for_project.dart';
 import 'package:porfolio/widgets/typing_text.dart';
 import 'package:porfolio/widgets/scroll_for_more.dart';
-import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:porfolio/widgets/particle_field.dart';
 import 'package:porfolio/widgets/responsive_builder.dart';
 import 'package:url_launcher/url_launcher.dart';

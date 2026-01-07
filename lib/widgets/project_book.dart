@@ -528,7 +528,7 @@ class _ProjectDetailsPage extends StatelessWidget {
                     text: feature as String,
                     bodySize: bodySize,
                   );
-                }).toList(),
+                }),
                 // Text(
                 //   project['description'] as String,
                 //   style: TextStyle(fontSize: bodySize, color: theme.colorScheme.onSurface.withOpacity(0.7), height: 1.5,),
