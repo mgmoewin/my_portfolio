@@ -27,13 +27,17 @@ jobs:
       - name: Setup Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: "3.38.5" # Use the version suggested by the error message
+          flutter-version: "3.38.5" # Use single quotes to ensure correct parsing
           channel: "stable"
           cache: true # Enable dependency caching
 
       # Step 3: Gets all the dependencies for your Flutter project.
       - name: Install dependencies
         run: flutter pub get
+
+      # Add this step to verify the Flutter version
+      - name: Verify Flutter version
+        run: flutter --version
 
       # Step 4: Builds the Flutter web application for release.
       # IMPORTANT: Make sure the base-href matches your repository name.
