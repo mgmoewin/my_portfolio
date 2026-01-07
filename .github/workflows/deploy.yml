@@ -41,7 +41,7 @@ jobs:
       # Step 4: Builds the Flutter web application for release.
       # IMPORTANT: Make sure the base-href matches your repository name.
       - name: Build Flutter web
-        run: flutter build web --web-renderer html --release --base-href /my_portfolio/
+        run: flutter build web --release --base-href /my_portfolio/
 
       # Step 5: Deploys the built files from 'build/web' to the 'gh-pages' branch.
       - name: Deploy to GitHub Pages
