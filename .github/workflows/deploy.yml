@@ -28,7 +28,8 @@ jobs:
         uses: subosito/flutter-action@v2
         with:
           flutter-version: "3.38.5" # Use the version suggested by the error message
-          channel: "stable" # Use the stable channel of Flutter.
+          channel: "stable"
+          cache: true # Enable dependency caching
 
       # Step 3: Gets all the dependencies for your Flutter project.
       - name: Install dependencies
@@ -37,7 +38,10 @@ jobs:
       # Step 4: Builds the Flutter web application for release.
       # IMPORTANT: Make sure the base-href matches your repository name.
       - name: Build Flutter web
-        run: flutter build web --web-renderer html --release --base-href /my_portfolio/
+        run: |
+          # Use the full path to the flutter executable to avoid path issues
+          # The path is available in the FLUTTER_ROOT environment variable
+          ${{ env.FLUTTER_ROOT }}/bin/flutter build web --web-renderer html --release --base-href /my_portfolio/
 
       # Step 5: Deploys the built files from 'build/web' to the 'gh-pages' branch.
       - name: Deploy to GitHub Pages
