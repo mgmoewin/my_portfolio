@@ -23,7 +23,7 @@
 ## 🚀 Live Demo
 
 You can view the live version of the portfolio on GitHub Pages:
-**[https://mgmoewin.github.io/my_porfolio/](https://mgmoewin.github.io/my_porfolio/)**
+**[https://mgmoewin.github.io/my_porfolio/](https://mgmoewin.github.io/my_portfolio/)**
 
 ## 📸 Screenshots
 
