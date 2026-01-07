@@ -1,6 +1,6 @@
 {
-    "name": "porfolio",
-    "short_name": "porfolio",
+    "name": "Moe Win Portfolio",
+    "short_name": "Moe Win",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
