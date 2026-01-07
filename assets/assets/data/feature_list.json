@@ -1,0 +1,40 @@
+[
+  {
+    "title": "Portfolio Website",
+    "description": "A responsive personal portfolio website built with Flutter to showcase my projects, skills, and professional experience.",
+    "imagePath": "assets/project_img/porfolio.png",
+    "technologies": ["Flutter", "Dart"],
+    "features": [
+      "Fully responsive design for mobile, tablet, and desktop.",
+      "Showcases a collection of my featured projects.",
+      "Built using modern Flutter widgets and practices.",
+      "Includes a contact form with email functionality.",
+      "Clean and organized codebase for easy maintenance and scalability.",
+      "Source code available on GitHub.",
+      "Deployed using GitHub Pages."
+    ],
+    "liveUrl": "https://mgmoewin.github.io/my_portfolio/",
+    "repoUrl": "https://github.com/mgmoewin/my_portfolio"
+  },
+
+  {
+    "title": "Gold Shop App",
+    "description": "A social networking platform to connect with friends, share updates, and discover new content.",
+    "imagePath": "assets/project_img/noble.png",
+    "technologies": ["Flutter", "Dart", "Supabase","Python", "FastAPI", "AWS", "PostgreSQL", "ChromaDB"],
+    "features": [
+      "User authentication and profile management.",
+      "Product listing and purchasing functionality.",
+      "Shopping cart and checkout process.",
+      "Order management and tracking.",
+      "Search and filter options for products.",
+      "Admin panel for product, order, slider,   and user management.",
+      "Real-time chat functionality with shop owners and customers.",
+      "Intergrate Chatbot for customer support.",
+      "Infinite scroll for product listings.",
+      "RESTful API integration with a Laravel backend."
+    ],
+    "projectType": "University Project Show",
+    "myRole": "Mobile App (UI/UX) and Frontend Developer"
+  }
+]

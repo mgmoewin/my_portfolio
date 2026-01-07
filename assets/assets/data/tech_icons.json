@@ -1,0 +1,18 @@
+{
+  "Flutter": "assets/images/flutter.png",
+  "Firebase": "assets/images/firebase.png",
+  "Dart": "assets/images/dart.png",
+  "Supabase": "assets/images/supabase.png",
+  "Laravel": "assets/images/laravel.png",
+  "PostgreSQL": "assets/images/postgresql.png",
+  "MySQL": "assets/images/mysql.png",
+  "FastAPI": "assets/images/fastapi.png",
+  "Python": "assets/images/python.png",
+  "AWS": "assets/images/aws.png",
+  "Figma": "assets/images/figma.png",
+  "ChromaDB": "assets/images/chroma.png"
+
+
+
+  
+}

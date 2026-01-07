@@ -1,0 +1,14 @@
+{
+    "title": "About Me",
+    "description": "Crafting digital experiences with passion, precision, and purpose",
+    "imageUrl": "assets/images/about.png",
+     "bio": {
+        "intro": "A passionate ",
+        "highlight1": "Junior Flutter Developer",
+        "connector": " and ",
+        "highlight2": "Computer Science student",
+        "outro": " with a love for crafting beautiful and intuitive user experiences."
+    },
+    "paragraph1": "Currently a fourth-year Computer Science student, I'm diving deep into cross-platform application development with Flutter. I love taking on challenging projects that help me grow my skills and create something impactful. I specialize in building scalable web and mobile applications using modern development technologies. I thrive on turning complex problems into elegant solutions that users love.",
+    "paragraph2": "Beyond work, I love exploring emerging technologies, contributing to open-source projects, and mentoring aspiring developers. I believe in continuous learning and staying at the forefront of technological innovation."
+}
