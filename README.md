@@ -1,13 +1,13 @@
 # My Flutter Portfolio
 
 <p align="center">
-  <a href="https://github.com/mgmoewin/my_porfolio/actions/workflows/deploy.yml">
-    <img src="https://github.com/mgmoewin/my_porfolio/actions/workflows/deploy.yml/badge.svg" alt="CI Status">
+  <a href="https://github.com/mgmoewin/my_portfolio/actions/workflows/deploy.yml">
+    <img src="https://github.com/mgmoewin/my_portfolio/actions/workflows/deploy.yml/badge.svg" alt="CI Status">
   </a>
   <img src="https://img.shields.io/badge/Flutter-3.x-blue?logo=flutter" alt="Flutter Version">
   <img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License">
-  <a href="https://github.com/mgmoewin/my_porfolio/stargazers">
-    <img src="https://img.shields.io/github/stars/mgmoewin/my_porfolio?style=social" alt="GitHub Stars">
+  <a href="https://github.com/mgmoewin/my_portfolio/stargazers">
+    <img src="https://img.shields.io/github/stars/mgmoewin/my_portfolio?style=social" alt="GitHub Stars">
   </a>
   <a href="https://www.linkedin.com/in/moe-win-3910411ab/">
     <img src="https://img.shields.io/badge/LinkedIn-Moe%20Win-blue?logo=linkedin" alt="LinkedIn">
@@ -23,7 +23,7 @@
 ## 🚀 Live Demo
 
 You can view the live version of the portfolio on GitHub Pages:
-**[https://mgmoewin.github.io/my_porfolio/](https://mgmoewin.github.io/my_portfolio/)**
+**[https://mgmoewin.github.io/my_portfolio/](https://mgmoewin.github.io/my_portfolio/)**
 
 ## 📸 Screenshots
 
@@ -73,11 +73,11 @@ Make sure you have the Flutter SDK installed on your machine.
 
 1.  Clone the repository:
     ```sh
-    git clone https://github.com/mgmoewin/my_porfolio.git
+    git clone https://github.com/mgmoewin/my_portfolio.git
     ```
 2.  Navigate to the project directory:
     ```sh
-    cd my_porfolio
+    cd my_portfolio
     ```
 3.  Get the dependencies:
     ```sh
