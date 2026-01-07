@@ -27,7 +27,7 @@ jobs:
       - name: Setup Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: "3.22.3" # Use a newer stable version compatible with your dependencies
+          flutter-version: "3.38.5" # Use the version suggested by the error message
           channel: "stable" # Use the stable channel of Flutter.
 
       # Step 3: Gets all the dependencies for your Flutter project.
