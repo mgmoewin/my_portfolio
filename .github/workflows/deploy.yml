@@ -44,6 +44,6 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./build/web
-          publish_branch: deploy # Specify the branch to deploy to
+          publish_branch: gh-pages # Deploy to the gh-pages branch
           # The 'force_orphan' option creates a clean history on the gh-pages branch.
           force_orphan: true
