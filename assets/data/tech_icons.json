@@ -10,7 +10,9 @@
   "Python": "assets/images/python.png",
   "AWS": "assets/images/aws.png",
   "Figma": "assets/images/figma.png",
-  "ChromaDB": "assets/images/chroma.png"
+  "ChromaDB": "assets/images/chroma.png",
+  "Riverpod": "assets/images/riverpod.png",
+  "IsarDB": "assets/images/isar.png"
 
 
 

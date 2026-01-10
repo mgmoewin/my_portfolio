@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:elegant_notification/elegant_notification.dart';
 import 'package:flutter/material.dart';
 import 'package:porfolio/config/emailjs_config.dart';
+import 'package:porfolio/widgets/gradient_button.dart';
 import 'package:porfolio/widgets/responsive_builder.dart';
 import 'package:porfolio/widgets/section_description.dart';
 import 'package:flutter/foundation.dart' show kIsWeb;
@@ -199,24 +200,25 @@ class _ContactSectionState extends State<ContactSection> {
                             icon: const Icon(Icons.mail),
                             label: 'Send Email',
                           ),
-                          // const SizedBox(width: 16),
-                          // GradientButton(
-                          //   onPressed: () {
-                          //     // This points to the CV file you added in the web/cv/ directory.
-                          //     const String cvUrl = 'cv/Moe_Win_CV.pdf';
-                          //     launchUrl(
-                          //       Uri.parse(cvUrl),
-                          //       mode: LaunchMode.externalApplication,
-                          //     );
-                          //   },
-                          //   icon: Icons.download,
-                          //   text: 'Download CV',
-                          //   padding: const EdgeInsets.symmetric(
-                          //     horizontal: 20,
-                          //     vertical: 11,
-                          //   ),
-                          //   fontSize: 13,
-                          // ),
+                          const SizedBox(width: 16),
+                          GradientButton(
+                            onPressed: () {
+                              // This points to the CV file you added in the web/cv/ directory.
+                              const String cvUrl =
+                                  'cv/Moe Win_Flutter_Developer_Resume.pdf';
+                              launchUrl(
+                                Uri.parse(cvUrl),
+                                mode: LaunchMode.externalApplication,
+                              );
+                            },
+                            icon: Icons.download,
+                            text: 'Download CV',
+                            padding: const EdgeInsets.symmetric(
+                              horizontal: 20,
+                              vertical: 11,
+                            ),
+                            fontSize: 13,
+                          ),
                         ],
                       ),
                     ],

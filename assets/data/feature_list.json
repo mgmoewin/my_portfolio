@@ -18,10 +18,10 @@
   },
 
   {
-    "title": "Gold Shop App",
+    "title": "Gold E-commerce App",
     "description": "A social networking platform to connect with friends, share updates, and discover new content.",
     "imagePath": "assets/project_img/noble.png",
-    "technologies": ["Flutter", "Dart", "Supabase","Python", "FastAPI", "AWS", "PostgreSQL", "ChromaDB"],
+    "technologies": ["Flutter", "Dart", "Laravel", "Supabase","Python", "FastAPI", "AWS", "PostgreSQL", "ChromaDB"],
     "features": [
       "User authentication and profile management.",
       "Product listing and purchasing functionality.",
@@ -36,5 +36,24 @@
     ],
     "projectType": "University Project Show",
     "myRole": "Mobile App (UI/UX) and Frontend Developer"
+  },
+  {
+    "title": "Baykinn (ဘေးကင်း)",
+    "description": "A cross-platform mobile application dedicated to personal and family safety, providing instant SOS alerts and real-time location sharing.",
+    "imagePath": "assets/project_img/baykinn.png",
+    "technologies": ["Flutter", "Dart", "Firebase", "Laravel", "MySQL"],
+    "features": [
+      "Instant SOS Alerts with location sharing.",
+      "Family & Group Management.",
+      "\"I'm Safe\" Notifications.",
+      "Multi-Language Support (English/Burmese).",
+      "Real-time Notifications and Live Updates.",
+      "User authentication and profile management."
+    ],
+    "projectType": "Hackathon Project (Code2Career)",
+    "myRole": "Mobile App Developer",
+
+    "liveUrl": "https://www.linkedin.com/posts/moe-win-3910411ab_flutter-mobiledevelopment-safetyapp-activity-7396470196443672576-gMoC?utm_source=share&utm_medium=member_desktop&rcm=ACoAADDy_N0B9d8getE6AsttMGezh2EO1KRLUa4",
+    "repoUrl": "https://github.com/mgmoewin/bay_kinn.git"
   }
 ]
