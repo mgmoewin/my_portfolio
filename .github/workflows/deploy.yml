@@ -1,54 +1,32 @@
-# This is the name of the workflow that will be displayed in the "Actions" tab on GitHub.
-name: Deploy Flutter Web to GitHub Pages
+name: Deploy to GitHub Pages
 
-# This section defines when the workflow should run.
 on:
-  # It triggers on every push to the 'main' branch.
   push:
-    branches:
-      - main
+    branches: [main]
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel.
 jobs:
-  # This job is named "build-and-deploy".
-  build-and-deploy:
-    # The type of runner that the job will run on. 'ubuntu-latest' is a standard choice.
+  build:
     runs-on: ubuntu-latest
-    # Grant the workflow write permissions to the repository's contents.
-    permissions:
-      contents: write
 
     steps:
-      # Step 1: Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it.
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v3
 
-      # Step 2: Sets up the Flutter environment using the official Flutter action.
-      - name: Setup Flutter
-        uses: flutter-actions/setup-flutter@v1
+      - uses: subosito/flutter-action@v2
         with:
-          version: "3.38.5"
-          cache: true # Enable dependency caching
+          channel: "stable"
 
-      # Step 3: Gets all the dependencies for your Flutter project.
+      - name: Enable web support
+        run: flutter config --enable-web
+
       - name: Install dependencies
         run: flutter pub get
 
-      # Add this step to verify the Flutter version
-      - name: Verify Flutter version
-        run: flutter --version
+      - name: Build Web
+        # Replace 'my_portfolio' with your actual repository name if it's different
+        run: flutter build web --release --base-href "/my_portfolio/"
 
-      # Step 4: Builds the Flutter web application for release.
-      # IMPORTANT: Make sure the base-href matches your repository name.
-      - name: Build Flutter web
-        run: flutter build web --release --base-href /my_portfolio/
-
-      # Step 5: Deploys the built files from 'build/web' to the 'gh-pages' branch.
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./build/web
-          publish_branch: gh-pages # Deploy to the gh-pages branch
-          # The 'force_orphan' option creates a clean history on the gh-pages branch.
-          force_orphan: true
