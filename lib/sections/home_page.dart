@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:porfolio/widgets/particle_field.dart';
 import 'package:porfolio/main.dart';
 import 'package:porfolio/sections/hero_section.dart';
 import 'package:porfolio/widgets/glass.card.dart';
@@ -53,6 +54,9 @@ class _HomepageState extends State<Homepage> {
 
   @override
   Widget build(BuildContext context) {
+    // Check the current theme mode to apply the correct background.
+    final isDark = themeModeNotifier.value == ThemeMode.dark;
+
     return ResponsiveBuilder(
       builder: (context, screenSize) {
         final isMobile =
@@ -73,6 +77,34 @@ class _HomepageState extends State<Homepage> {
               : null,
           body: Stack(
             children: [
+              // fixed background gradient
+              Positioned.fill(
+                child: Container(
+                  decoration: BoxDecoration(
+                    gradient: isDark
+                        ? LinearGradient(
+                            colors: [
+                              Colors.purple.shade900,
+                              Colors.black,
+                              Colors.blue.shade900,
+                            ],
+                            begin: Alignment.topLeft,
+                            end: Alignment.bottomRight,
+                          )
+                        : const LinearGradient(
+                            colors: [
+                              Color(0xFFE0E0FF),
+                              Color(0xFFF9F9F9),
+                              Color(0xFFE0E0FF),
+                            ],
+                            begin: Alignment.topLeft,
+                            end: Alignment.bottomRight,
+                          ),
+                  ),
+                ),
+              ),
+              // fixed particle field
+              const Positioned.fill(child: ParticleField()),
               SingleChildScrollView(
                 child: Column(
                   children: <Widget>[
