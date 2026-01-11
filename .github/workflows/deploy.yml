@@ -3,10 +3,11 @@ name: Deploy Flutter Web to GitHub Pages
 
 # This section defines when the workflow should run.
 on:
-  # It triggers on every push to the 'main' branch.
+  # It triggers on every push to the 'main' and 'deploy' branches.
   push:
     branches:
       - main
+      - deploy
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel.
 jobs:
