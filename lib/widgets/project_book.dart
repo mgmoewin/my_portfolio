@@ -705,7 +705,7 @@ class _GlassButton extends StatelessWidget {
   final IconData icon;
   final VoidCallback? onPressed;
 
-  const _GlassButton({required this.text, required this.icon, this.onPressed});
+  const _GlassButton({required this.text, required this.icon});
 
   @override
   Widget build(BuildContext context) {
